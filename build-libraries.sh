@@ -10,11 +10,14 @@ sudo apt install build-essential git -y
 # raylib library dependencies
 sudo apt install libasound2-dev mesa-common-dev libx11-dev libxrandr-dev libxi-dev xorg-dev libgl1-mesa-dev libglu1-mesa-dev -y
 
-# clone raylib
-git clone https://github.com/Raysan5/raylib.git --recurse-submodules
+if ! ([[ -f "$BASEDIR/external/raylib" ]])
+then
+    echo "Raylib not present; Try cloning with --resurse-submodules"
 
+    exit 1
+fi
 
-# # build raylib
+# build raylib
 
 cd $BASEDIR/raylib/src
 
