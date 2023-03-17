@@ -19,11 +19,11 @@ fi
 
 # build raylib
 
-cd $BASEDIR/raylib/src
+cd $BASEDIR/external/raylib/src
 
 make PLATFORM=PLATFORM_DESKTOP
 
-cp ./libraylib.a $BASEDIR/
+cp ./libraylib.a $BASEDIR/lib
 
-cp ./raymath.h $BASEDIR/../include/
-cp ./raylib.h $BASEDIR/../include/
+cp ./raymath.h $BASEDIR/include/
+cp ./raylib.h $BASEDIR/include/
