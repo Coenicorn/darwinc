@@ -1,5 +1,4 @@
 *.o
 *.out
-.vscode
 include/*.h
 lib/*.a
