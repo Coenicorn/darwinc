@@ -1,3 +1,5 @@
 *.o
 *.out
 .vscode
+include/*
+lib/*
