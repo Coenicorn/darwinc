@@ -7,16 +7,22 @@
             "label": "GNU Make build",
             
             "windows": {
-                "command": "mingw32-make"
+                "command": "mingw32-make",
+                "args": [
+                    "run"
+                ]
             },
 
             "linux": {
                 "command": "make",
+                "args": [
+                    "run"
+                ]
             },
 
             "presentation": {
                 "echo": false,
-                "reveal": "silent",
+                "reveal": "always",
                 "focus": false,
                 "panel": "dedicated",
                 "showReuseMessage": false,
