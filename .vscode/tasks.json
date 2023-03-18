@@ -8,16 +8,10 @@
             
             "windows": {
                 "command": "mingw32-make",
-                "args": [
-                    "run"
-                ]
             },
 
             "linux": {
                 "command": "make",
-                "args": [
-                    "run"
-                ]
             },
 
             "presentation": {

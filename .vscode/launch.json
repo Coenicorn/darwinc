@@ -22,7 +22,9 @@
                     "text": "-gdb-set disassembly-flavor intel",
                     "ignoreFailures": true
                 }
-            ]
+            ],
+            "preLaunchTask": "GNU Make build"
+
         }
     ],
     "version": "2.0.0"

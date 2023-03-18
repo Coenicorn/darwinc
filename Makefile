@@ -66,13 +66,17 @@ OBJS := $(wildcard $(SRCDIR)/*.c)
 OBJS := $(OBJS:.c=.o)
 OBJS := $(subst $(SRCDIR)/,$(OBJDIR)/,$(OBJS))
 
+DEPENDS := $(OBJS:.o=.d)
+
 RM := rmdir
 
 $(EXEC): $(OBJS)
 	$(CC) $^ $(LFLAGS) -o $(EXEC) $(LDFLAGS)
 
+-include $(DEPENDS)
+
 $(OBJDIR)/%.o: $(SRCDIR)/%.c
-	$(CC) -c $< $(CFLAGS) -o $@
+	$(CC) -MD -c $< $(CFLAGS) -o $@
 
 run: $(EXEC)
 	@clear
