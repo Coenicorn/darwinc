@@ -7,12 +7,12 @@
 
 typedef enum
 {
-    DC_TERRAIN_EMPTY,
-    DC_TERRAIN_GRASS,
-    DC_TERRAIN_EARTH,
-    DC_TERRAIN_STONE,
-
-} DC_TILES;
+    DC_TILE_EMPTY,
+    DC_TILE_GRASS,
+    DC_TILE_EARTH,
+    DC_TILE_STONE,
+    DC_TILE_WATER
+} DC_TILE_TYPES;
 
 typedef struct DC_Tile
 {

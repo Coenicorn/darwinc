@@ -42,7 +42,7 @@ void DC_GenerateMapWorld(DC_World *w)
 
                 DC_Tile *tile = DC_TileAtWorld(w, x, y, z);
 
-                tile->type = DC_TERRAIN_EMPTY;
+                tile->type = DC_TILE_EMPTY;
 
                 tile->pos = (DC_Vec3){x, y, z};
 
@@ -136,8 +136,30 @@ DC_World *DC_LoadWorldFromFile(const char *filename)
 
     DC_World *outWorld = DC_CreateWorldSkeleton(sx, sy, sz);
 
+    uint8_t typesBuf[outWorld->maplen];
+
     // read into world map
-    fread(outWorld->map, sizeof(uint8_t), outWorld->maplen, fp);
+    fread(typesBuf, sizeof(uint8_t), outWorld->maplen, fp);
+
+    // initialize world with types from file
+    int i;
+    for (int x = 0; x < outWorld->sx; x++)
+    {
+        for (int y = 0; y < outWorld->sy; y++)
+        {
+            for (int z = 0; z < outWorld->sz; z++)
+            {
+
+                DC_Tile *tile = DC_TileAtWorld(outWorld, x, y, z);
+
+                i = DC_WorldPosToIndex(outWorld, x, y, z);
+
+                tile->type = typesBuf[i];
+                tile->pos = (DC_Vec3){x, y, z};
+
+            }
+        }
+    }
 
     DC_Log("Succesfully loaded world from file");
 
