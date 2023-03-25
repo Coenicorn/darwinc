@@ -91,4 +91,5 @@ endif
 ifeq ($(PLATFORM),LINUX)
 	find . -name "*.out" -type f -delete
 	find . -name "*.o" -type f -delete
+	find . -name "*.d" -type f -delete
 endif
