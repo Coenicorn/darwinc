@@ -66,9 +66,6 @@
 
 #define DYVE_MAXSIZE __UINT32_MAX__
 
-#define DYVE_CONC_(A, B) A##B
-#define DYVE_CONC(A, B) DYVE_CONC_(A, B)
-
 #ifndef DYVE_MAXSIZEDIFFERENCE
 #define DYVE_MAXSIZEDIFFERENCE 16
 #endif

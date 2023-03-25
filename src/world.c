@@ -44,7 +44,7 @@ void DC_GenerateMapWorld(DC_World *w)
 
                 tile->type = DC_TILE_EMPTY;
 
-                tile->pos = (DC_Vec3){x, y, z};
+                tile->pos = (Vec3){x, y, z};
 
             }
         }
@@ -155,7 +155,7 @@ DC_World *DC_LoadWorldFromFile(const char *filename)
                 i = DC_WorldPosToIndex(outWorld, x, y, z);
 
                 tile->type = typesBuf[i];
-                tile->pos = (DC_Vec3){x, y, z};
+                tile->pos = (Vec3){x, y, z};
 
             }
         }

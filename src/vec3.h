@@ -1,9 +1,9 @@
-#ifndef DC_VEC3_H
-#define DC_VEC3_H
+#ifndef Vec3_H
+#define Vec3_H
 
-typedef struct DC_Vec3
+typedef struct Vec3
 {
     int x, y, z;
-} DC_Vec3;
+} Vec3;
 
 #endif

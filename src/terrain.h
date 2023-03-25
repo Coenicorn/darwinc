@@ -18,7 +18,7 @@ typedef struct DC_Tile
 {
 
     uint8_t type;
-    DC_Vec3 pos;
+    Vec3 pos;
 
 } DC_Tile;
 
