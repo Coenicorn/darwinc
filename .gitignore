@@ -3,3 +3,6 @@
 include/*.h
 lib/*.a
 *.d
+CMakeFiles
+CMakeCache.txt
+*.exe

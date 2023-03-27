@@ -3,11 +3,14 @@
 #include "world.h"
 #include "ecs.h"
 #include "components.h"
+#include "log.h"
 
 #include "dyve.h"
 
 int main(void)
 {
+
+    DC_Log("Initialized");
 
     // DC_World *g_world = DC_LoadWorldFromFile("empty_16.wld");
 
@@ -19,6 +22,8 @@ int main(void)
     ECS_COMPONENT_Transform_Add(g_ECS);
 
     ECS_Destroy(g_ECS);
+
+    DC_Log("Exited");
 
     return 0;
 }
