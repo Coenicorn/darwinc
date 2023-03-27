@@ -6,3 +6,4 @@ lib/*.a
 CMakeFiles
 CMakeCache.txt
 *.exe
+Makefile
