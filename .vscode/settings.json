@@ -1,7 +1,14 @@
 {
     "files.associations": {
-        "world.h": "c",
-        "ecs.h": "c"
-    },
-    "cmake.configureOnOpen": true
+        "*.h": "c",
+        "random": "c",
+        "*.tcc": "c",
+        "streambuf": "c",
+        "type_traits": "c",
+        "array": "c",
+        "string": "c",
+        "string_view": "c",
+        "initializer_list": "c",
+        "utility": "c"
+    }
 }

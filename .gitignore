@@ -4,6 +4,7 @@ include/*.h
 lib/*.a
 *.d
 CMakeFiles
-.vscode
 CMakeCache.txt
-build
+*.exe
+Makefile
+cmake_install.cmake
