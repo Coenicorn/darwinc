@@ -1,1 +1,0 @@
-Build output. Binary files present here *should* be ignored as they may be platform specific.
