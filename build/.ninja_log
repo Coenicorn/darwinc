@@ -1,6 +1,0 @@
-# ninja log v5
-0	36	1680076486965313600	src/CMakeFiles/darwinc.dir/main.c.o	a04060fbba5f85ec
-0	52	1680076486981313768	src/CMakeFiles/darwinc.dir/world.c.o	b58d3356ef37c656
-0	40	1680076486969313641	src/cecs/src/CMakeFiles/cecs.dir/ecs.c.o	8713d86c5779aff8
-40	89	1680076487017314144	src/cecs/src/libcecs.a	68bd9a8b389077e9
-89	111	1680076487041314395	src/darwinc	593c57b18ca19824

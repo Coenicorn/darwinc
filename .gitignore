@@ -8,3 +8,4 @@ CMakeCache.txt
 *.exe
 Makefile
 cmake_install.cmake
+build
