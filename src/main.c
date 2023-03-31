@@ -1,11 +1,9 @@
 #include <stdio.h>
 
-#include "ecs.h"
 #include "world.h"
 #include "ecs.h"
-#include "components.h"
+#include "componentdef.h"
 #include "log.h"
-
 #include "dyve.h"
 
 int main(void)
@@ -17,7 +15,12 @@ int main(void)
 
     // DC_FreeWorld(g_world);
 
-    printf("Hello World\n");
+    ECS_Container *globalECS = ECS_CreateECS();
+
+    ECS_COMPONENT_Transform_Add(globalECS);
+    ECS_COMPONENT_Metaproperties_Add(globalECS);
+
+    ECS_Destroy(globalECS);
 
     return 0;
 }
