@@ -22,5 +22,7 @@ int main(void)
 
     ECS_Destroy(globalECS);
 
+    DC_Log("Exited");
+
     return 0;
 }
